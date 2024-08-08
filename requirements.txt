@@ -1,5 +1,5 @@
-dash==2.9.3
-dash-cytoscape==0.3.0
-networkx==3.0
-plotly==5.14.1
-PyMuPDF==1.20.2
+dash
+dash-cytoscape
+networkx
+plotly
+PyMuPDF
