@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   dash-app:
-    build: .
+    image: ghcr.io/ozeliurs/dash-app:latest
     container_name: "dash-app"
     restart: unless-stopped
     networks:
