@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  dash-app:
+    build: .
+    container_name: "dash-app"
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dash-app.rule=Host(`dash.ozeliurs.com`)"
+      - "traefik.http.routers.dash-app.entrypoints=websecure"
+      - "traefik.http.routers.dash-app.tls=true"
+      - "traefik.http.routers.dash-app.tls.certresolver=cloudflare"
+      - "traefik.http.services.dash-app.loadbalancer.server.port=8050"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+networks:
+  traefik:
+    external: true
