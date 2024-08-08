@@ -3,3 +3,4 @@ dash-cytoscape
 networkx
 plotly
 PyMuPDF
+numpy
