@@ -75,7 +75,7 @@ friends = {
     "Raphaël": "IF",
     "Apoorva": "SSE",
     "Tom": "CyberSec",
-    "Marc Roux": "IA-ID",
+    "Marc Pinet": "IA-ID",
     "Simon": "CyberSec",
     "Tu": "IHM",
     "Cremy": "SSE",
