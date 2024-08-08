@@ -102,6 +102,7 @@ friends = {
     "Nicolas": "IoT-CPS",
     "Nikan": "IF",
     "Timothé": "IA-ID",
+    "Météorite de CACA": "IA-ID",
 }
 
 if __name__ == "__main__":
