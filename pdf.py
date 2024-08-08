@@ -52,7 +52,7 @@ def get_parsed_pdf() -> dict:
         if "Cours proposé dans la mineure / Course offered in the minor :" in text:
             if merged_page:
                 Path("output").mkdir(exist_ok=True)
-                Path(f"output/{parse(merged_page)["title"]}.txt").write_text(merged_page)
+                Path(f"output/{parse(merged_page)['title']}.txt").write_text(merged_page)
                 minors.append(parse(merged_page))
 
             merged_page = text
