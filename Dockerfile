@@ -12,10 +12,9 @@ RUN apt-get update && apt-get install -y swig
 
 # Install Python dependencies
 RUN pip install -r requirements.txt
-RUN pip install gunicorn
 
 # Copy the rest of the application code into the container
 COPY . .
 
-# Command to run the application (gunicorn)
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "main:app"]
+# Command to run the application
+CMD ["python", "app.py"]

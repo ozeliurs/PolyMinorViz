@@ -245,4 +245,4 @@ def update_network_graph(selected_minor):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
